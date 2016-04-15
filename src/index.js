@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import Application from './js/Application';
 
 ReactDOM.render(
-    <Application name="Dog" />,
+    <Application name="React" />,
     document.getElementById('app')
 );

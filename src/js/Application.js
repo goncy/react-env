@@ -3,6 +3,6 @@ import {} from '../scss/application.scss'
 
 export default class Application extends React.Component {
   render(){
-    return <span>Hello {this.props.name}</span>;
+    return <h1>Hello {this.props.name}</h1>;
   }
 }

@@ -21,13 +21,10 @@ describe("Testea el modulo Application", () => {
     container.innerHTML = '';
   });
 
-  it("Deberia saludar con un span", () => {
+  it("Deberia agregar un H1", () => {
     ReactDOM.render(<Application />, container);
-
-    const actual = container.querySelector('span').nodeName;
-    const expected = 'SPAN';
-
-    expect(actual).to.equal(expected);
+    const actual = container.querySelector('h1').getAttribute('data-reactid');
+    expect(actual).to.equal('.0');
   });
 
   it("Deberia saludar a alguien", () => {
